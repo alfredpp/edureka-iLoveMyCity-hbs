@@ -10,7 +10,7 @@ app.set('view engine', 'handlebars');
 app.engine('handlebars', exphbs({defaultLayout:'main'}));
 
 app.get('/',routes.home);
-app.get('/:hotel',routes.hotel);
+app.get('/:city',routes.city);
 
 var port = process.env.PORT || 8080;
 
